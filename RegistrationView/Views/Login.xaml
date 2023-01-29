@@ -13,19 +13,22 @@
         WindowStartupLocation="CenterScreen"
         Title="Login" Height="500" Width="800">
 
+    <Window.DataContext>
+        <vm:LoginViewModel/>
+    </Window.DataContext>
+
     <Window.Resources>
-        <vm:LoginViewModel x:Key="vm"/>
-        <BooleanToVisibilityConverter x:Key="BoolToVisibility"/>
+        <BooleanToVisibilityConverter x:Key="BooleanToVisibility"/>
     </Window.Resources>
 
 
 
     <Window.Visibility>
-        <Binding Path="IsViewVisible" Mode="TwoWay" Converter="{StaticResource BoolToVisibility}"/>
+        <Binding Path="IsViewVisible" Mode="TwoWay" Converter="{StaticResource BooleanToVisibility}"/>
     </Window.Visibility>
 
 
-    <Grid DataContext="{Binding Source={StaticResource vm}}">
+    <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="1.5*"/>

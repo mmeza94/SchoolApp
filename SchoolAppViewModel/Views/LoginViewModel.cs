@@ -143,6 +143,7 @@ namespace SchoolAppViewModel.Views
         public LoginViewModel()
         {
             timer = new DispatcherTimer();
+            isViewVisible = true;
         }
 
 

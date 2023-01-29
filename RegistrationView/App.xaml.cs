@@ -17,6 +17,7 @@ namespace RegistrationView
         protected void ApplicationStart(object sender,StartupEventArgs e)
         {
             var login = new Login();
+            login.Show();
             login.IsVisibleChanged += (s, ev) =>
             {
                 if(login.IsVisible==false && login.IsLoaded)
