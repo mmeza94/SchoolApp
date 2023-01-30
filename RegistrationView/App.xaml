@@ -162,7 +162,7 @@
             </Setter>
             <Style.Triggers>
                 <Trigger Property="IsMouseOver" Value="True">
-                    <Setter Property="Background" Value="#dcdcdc"/>
+                    <Setter Property="Background" Value="#dedede"/>
                 </Trigger>
             </Style.Triggers>
         </Style>
@@ -234,7 +234,7 @@
             <Setter Property="HorizontalAlignment" Value="Right"/>
             <Setter Property="Margin" Value="0 20 0 0"/>
             <Setter Property="FontSize" Value="13"/>
-            <Setter Property="Grid.Row" Value="1"/>
+            <Setter Property="Grid.Row" Value="0"/>
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="Button">
