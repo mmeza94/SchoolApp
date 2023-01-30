@@ -8,6 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="MahApps.Metro.IconPacks" Version="4.11.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\SchoolAppModel\SchoolAppModel.csproj" />
   </ItemGroup>
 
